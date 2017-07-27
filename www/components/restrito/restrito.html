@@ -1,0 +1,51 @@
+
+<div ng-app="myApp">
+        <div ng-controller="restritoCtrl as vm">
+        
+    <div class= "login-container">
+    <div class= "login-box">
+        
+        <div = class="title" align='center'>  
+        <h1> TABELA DE ALUNOS </h1>
+        </div>
+
+        
+       <div>
+        
+        
+        <!--   Tabela   -->
+        <table border="1" width=100%>
+                        
+        <tr align='center'>    <!--   linha   -->
+            <td align="center">    <!--   coluna   -->
+            <md-button ng-click="vm.sortBy('nome')" class="md-raised md-primary"> Nome </md-button>
+            </td>
+            
+            <td>
+            <md-button ng-click="vm.sortBy('nota')" class="md-raised md-primary"> Nota </md-button>
+            </td>
+        </tr>
+            
+            
+        <tr ng-repeat="x in vm.students | orderBy :vm.propertyName">
+            <td>{{x.nome}}</td>
+            <td align="center">{{x.nota}}</td>
+        </tr>
+            
+        </table>
+           
+        </div>
+
+       
+        
+    </div>
+
+</div>
+
+</div>
+    
+</div>
+    
+
+
+

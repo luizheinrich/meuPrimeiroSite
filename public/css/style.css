@@ -1,0 +1,126 @@
+
+
+.navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }
+        
+        .title {
+            font-weight: bold;
+            padding-left: 6px;
+            padding-top: 6px;
+            border-bottom: 1px solid #BDBDBD;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+
+        .login-container {
+            color: #90A4AF;
+            margin: auto;
+            width: 35%;
+            
+            
+            
+        }
+        .login-box {
+            position: absolute;
+            background: #eee;
+            display: block;
+            width: 100%;
+            position: relative;
+            border-radius: 8px;
+            border: 1px solid #E0E0E0;
+            padding: 16px;
+        }
+        
+          }
+        .login-box ul {
+            position: relative;
+            list-style-type: none;
+            display: block;        <!-- nada pode ficar ao lado desta lista -->
+            text-align: center;
+            width: 100%;
+            padding: 0;
+                    
+        }
+        
+        .login-box ul > li {
+            
+            padding: 16px;
+            width: 100%;
+        }
+
+        .login-box-content input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #BDBDBD
+            width: 90%;
+            
+        }
+        
+        .terms{
+            text-align: center;
+            
+            
+        }
+        
+
+        .submit-btn {
+            margin: 16px;
+            text-align: center;        
+        }
+        
+        .submit-btn button{
+            width: 50%;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #1E88E5;
+            background-Color: #2196F3;
+            font-size: 16px;
+            
+        }
+        
+        .myButton {
+   -moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+   -webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+   box-shadow: inset 0px 1px 0px 0px #54a3f7;
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+   background: -moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+   background: -webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+   background: -o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+   background: -ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+   background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7', GradientType=0);
+   background-color: #007dc1;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   border: 1px solid #124d77;
+   display: inline-block;
+   cursor: pointer;
+   color: #ffffff;
+   font-family: Arial;
+   font-size: 13px;
+   padding: 6px 24px;
+   text-decoration: none;
+   text-shadow: 0px 1px 0px #154682;
+  }
+  
+  .myButton:hover {
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+   background: -moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+   background: -webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+   background: -o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+   background: -ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+   background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1', GradientType=0);
+   background-color: #0061a7;
+  }
+  
+  .myButton:active {
+   position: relative;
+   top: 1px;
+  }
+        
+        

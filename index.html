@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+     <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    
+    <!-- CSS's -->
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    
+    <link rel="stylesheet" href="public/css/cadastro.css">
+    
+    <link rel="stylesheet" href="/public/css/style.css">
+    
+    <link rel="stylesheet" href="/public/css/tabela.css">
+    
+    
+    <!-- Bower -->
+    <script src="/bower_components/angular/angular.js"></script>
+
+	<script src="/bower_components/angular-aria/angular-aria.js"></script>
+        
+	<script src="/bower_components/angular-animate/angular-animate.js"></script>
+        
+	<script src="/bower_components/angular-material/angular-material.js"></script>
+    
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    
+    
+    <!-- App -->
+    <script src="app.js"></script>
+ 
+    
+    <!-- Controllers -->
+       
+     <script src="www/components/restrito/restritoCtrl.js"></script>
+    
+     <script src="/www/components/login/loginCtrl.js"></script>
+    
+     <script src="/www/components/cadastro/SignupCtrl.js"></script>
+    
+<!-- <script src="/www/components/home/homeCtrl.js"></script> -->
+    
+     <script src="/www/components/nav_bar/nav_barCtrl.js"></script>
+    
+     <script src="/www/components/contato/contatoCtrl.js"></script>
+    
+    
+    
+    <div ng-include="'/www/components/nav_bar/nav_bar.html'"></div>
+    
+    
+</head>
+
+    
+<body ng-app="myApp">
+
+    
+     <ui-view></ui-view>
+    
+
+</body>
+</html>
+
+
+

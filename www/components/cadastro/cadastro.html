@@ -1,0 +1,130 @@
+
+<div ng-controller="SignupCtrl as vm">
+        <div flex="100">
+        
+    <div class= "login-container">
+    <div class= "login-box">
+        <div = class="title">  
+        <h1> CADASTRO </h1>
+        </div>
+        
+        
+        <form name="signupForm">
+            
+    <div class="login-box-content">
+        
+            
+            <ul>
+                
+                
+
+                
+        <!-- NOME -->
+        <md-input-container class="md-icon-float md-block">
+        <!-- Use floating label instead of placeholder -->
+        <label>Nome Competo</label>
+        <md-icon md-svg-src="public/img/icons/ic_person_24px.svg" class="name"></md-icon>
+        <input id="nome" ng-model="vm.newUser.name" type="text" ng-required="true">
+        </md-input-container>
+                
+                
+        <!-- E-MAIL -->
+        <md-input-container class="md-icon-float md-block">
+        <label>Email</label>
+        <input ng-model="vm.newUser.email" type="email" placeholder="Email " ng-required="true">
+        </md-input-container>
+
+                
+        <!-- SENHA -->
+        <md-input-container class="md-icon-float md-block">
+        <label>Senha</label>
+        <md-icon md-svg-src="public/img/icons/ic_security_white_24px.svg" class="name"></md-icon>
+        <input ng-model="vm.newUser.password" type="text" placeholder="senha" ng-required="true">
+        </md-input-container>
+        
+                
+        <!-- TELEFONE -->
+        <md-input-container class="md-icon-float md-block">
+        <label>Telefone</label>
+        <md-icon md-svg-src="public/img/icons/ic_phone_black_24px.svg" class="name"></md-icon>
+        <input ng-model="vm.newUser.phone" type="text" placeholder="numero de telefone" ng-required="true">
+        </md-input-container>
+                
+                
+        <!-- ENDEREÇO -->
+        <md-input-container  class="md-block" class="md-icon-float md-block">
+        <md-icon md-svg-src="public/img/icons/ic_place_black_24px.svg" style="display:inline-block;"></md-icon>    
+        <input ng-model="vm.newUser.address" type="text" placeholder="Endereço"  ng-required="true">
+        </md-input-container>
+             
+                
+        <!-- GÊNERO -->
+        <md-input-container>
+        <label>Gênero</label>
+        <md-icon md-svg-src="public/img/icons/ic_sex_24px.svg" class="name"></md-icon>
+            
+        <md-select ng-model="vm.newUser.sex" placeholder="Selecionar" class="md-no-underline" ng-required="true">
+          <md-option value=NULL>Selecionar</md-option> 
+          <md-option value="male">Masculino</md-option>
+          <md-option value="sword">Feminino</md-option>
+          <md-option value="other">Outro</md-option>
+        </md-select>
+        </md-input-container>
+                
+                
+                
+
+            </ul>
+        
+            
+     </div>
+            
+            
+  
+            <!-- Termos & Condições -->
+           <md-input-container class="md-block">
+           <md-checkbox name="tos" ng-model="project.tos" required>
+           Eu aceito os <span style="color:#2196F3">Termos & Condições</span>.
+           </md-checkbox>
+           
+           <!-- Termos & Condições - Mensagem de erro -->
+           <div ng-messages="projectForm.tos.$error" multiple md-auto-hide="false">
+           <div ng-message="required">
+           Atenção! Para proseguir, você precisa aceitar os <span style="color:#2196F3">Termos & Condições</span>.
+           </div>
+           </div>
+           </md-input-container>
+
+
+
+
+        <md-card-actions layout="column" layout-align="center center">
+            
+        <md-button ng-click="vm.console()" class="md-raised md-primary"> Submeter </md-button>
+            
+        </md-card-actions>
+       
+      
+        <md-card-title-text layout="column" layout-align="center center">
+        <a ui-sref="login"> Já sou cadastrado </a> 
+        </md-card-title-text>
+            
+            
+                
+                
+        </form>
+            
+    </div>
+        
+
+</div>
+        
+        
+
+</div>
+
+</div>
+    
+
+
+
