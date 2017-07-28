@@ -39,7 +39,7 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
         // Página Login
           .state('login', {
           url: '/login',
-          
+          authenticate: true,
           templateUrl: 'www/components/login/login.html',
           controller: 'loginCtrl as vm'
          })
@@ -68,7 +68,7 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
     
         // Página Sobre
           .state('sobre', {
-          url: '/contato',
+          url: '/sobre',
          
           templateUrl: 'www/components/sobre/sobre.html',
           controller: 'sobreCtrl as vm'

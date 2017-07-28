@@ -1,4 +1,46 @@
-<!-- sobre.html -->
-<div class="page-header">
-   <h1>Página Contato!</h1>
+<!-- contato.html -->
+<div class= "login-container">
+    
+    
+   <div align="center" >   
+    
+   <h1>Dúvidas, Críticas e Sugestões?</h1>
+    
+   <h1>Entre em contato conosco!</h1>
+
+   </div>
+
+
+<div class= "login-box" align="center">  
+
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Seu Nome:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Seu E-mail:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Sua Messagem:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="50"></textarea><br />
+	</div>
+    
+    
+    
+    <md-card-actions layout="column" layout-align="center center">
+            
+    <md-button ng-click="vm.console()" class="md-raised md-primary"> Enviar </md-button>
+            
+    </md-card-actions>
+    
+    
+    
+</form>
+    
+    
+    </div>
+    
 </div>
+

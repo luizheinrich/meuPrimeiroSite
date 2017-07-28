@@ -1,9 +1,9 @@
 (function () {
 
  'use strict';
- angular.module('myApp').controller('loginCtrl', ['$rootScope', '$state', loginCtrl]);
+ angular.module('myApp').controller('contatoCtrl', ['$rootScope', '$state', contatoCtrl]);
 
- function loginCtrl($rootScope, $state) {
+ function contatoCtrl($rootScope, $state) {
   var vm = this;
      
       
