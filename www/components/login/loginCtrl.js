@@ -9,7 +9,7 @@
   vm.userCredentials = {};
   vm.user = {
 
-        email: 'paponcio6@gmail.com',
+        email: 'mr.robot@devsufpa.com',
         password: '1234'
       
   }
@@ -30,7 +30,7 @@
        
    } else {
     $rootScope.isLogedIn = true;
-    $state.go('home');
+    $state.go('restrito');
        
    }
   };

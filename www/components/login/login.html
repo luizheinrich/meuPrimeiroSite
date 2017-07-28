@@ -4,28 +4,37 @@
     <div flex="50"> 
     <md-card>
 <md-card-title layout="column" >
-    <md-card-title-text layout="column" layout-align="center center">
-        <span class="md-headline"> LOGIN</span>
     
-   
+     <md-card-title-text layout="column" layout-align="center">
+        <span class="md-headline"> LOGIN </span>
      </md-card-title-text>
-    <div layout="column" layout-align="center">
     
-        <md-input-container>
-        <label>Nome de usuário </label>
-        <input ng-model="user.title">
-      </md-input-container>
-         <md-input-container>
-        <label>Email</label>
-        <input ng-model="user.email" type="email">
-      </md-input-container>
-   </div>
+    
+    
+       <div layout="column" layout-align="center">
+    
+            <md-input-container> 
+            <label> Email </label>
+            <input ng-model="vm.userCrentials.email" type="email">
+            </md-input-container>
+
+            <md-input-container>
+            <label> Senha </label>
+            <input ng-model="vm.userCrentials.password" type="password">
+            </md-input-container>
+           
+       </div>
+   
+    
+    
+  
+    
     
     </md-card-title>
 
     
     <md-card-actions layout="column" layout-align="center center">
-    <md-button class="md-raised md-primary"> Entrar </md-button>
+    <md-button class="md-raised md-primary" class="md-raised md-primary" ng-click="vm.islogedIn(vm.userCrentials)"> Entrar </md-button>
         
 
     </md-card-actions>

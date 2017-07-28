@@ -3,7 +3,7 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
 .run(["$rootScope", "$state" ,function($rootScope, $state){
     console.log("Acabei de acessar o site ");
     
-    $rootScope.isLogedIn = true;
+    $rootScope.isLogedIn = false;
     
      $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState) {
          console.log("Indo para a pagina: ", toState.name);
@@ -12,7 +12,7 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
    if (toState.authenticate && !$rootScope.isLogedIn) {
      console.log("Precisa Autenticar");
      event.preventDefault();
-     $state.go('login');
+     $state.go('restrito');
     }             
                    
 })
@@ -39,7 +39,6 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
         // Página Login
           .state('login', {
           url: '/login',
-          authenticate: true,
           templateUrl: 'www/components/login/login.html',
           controller: 'loginCtrl as vm'
          })
@@ -60,7 +59,7 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
         // Página Acesso Restrito
           .state('restrito', {
           url: '/restrito',
-         
+          authenticate: true,
           templateUrl: 'www/components/restrito/restrito.html',
           controller: 'restritoCtrl as vm'    
           })
@@ -95,6 +94,6 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
     
     
 
- $urlRouterProvider.otherwise('/login');
+ $urlRouterProvider.otherwise('/home');
 
 }]);
