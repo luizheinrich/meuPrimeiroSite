@@ -48,7 +48,6 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
         // Página Cadastro
           .state('cadastro', {
           url: '/cadastro',
-         
           templateUrl: 'www/components/cadastro/cadastro.html',
           controller: 'SignupCtrl as vm'
 
@@ -68,7 +67,6 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
         // Página Sobre
           .state('sobre', {
           url: '/sobre',
-         
           templateUrl: 'www/components/sobre/sobre.html',
           controller: 'sobreCtrl as vm'
 
@@ -79,7 +77,6 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
         // Página Contato
           .state('contato', {
           url: '/contato',
-         
           templateUrl: 'www/components/contato/contato.html',
           controller: 'contatoCtrl as vm'
 

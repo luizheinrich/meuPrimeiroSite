@@ -6,7 +6,30 @@
    <h1>Bem-Vindo à Página Inicial do projeto DEVs-UFPA!</h1>
 </div>
 
+    <div class="page-header" align="center">
+    <h3>Para acessar a página "Restrito", use as seguintes credenciais:</h3>
+    </div>
 
 
+    
+    <table border="1" width=40% align='center'>
+ 
+        
+        <tr align="center">
+            <td> E-mail </td>
+            <td> Senha </td>
+        </tr>
+        
+
+        <tr ng-repeat="x in vm.credentials" align="center">
+            <td>{{x.email}}</td>
+            <td>{{x.senha}}</td>
+        </tr>
+            
+        </table>
+    
+    
+    
+    
     
 </div>
